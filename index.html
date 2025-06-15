@@ -20,16 +20,15 @@
       </div>
 
       <a href="#" class="navbar-logo">
-        <span>Ambalan <b>Monierson Gradison</b></span
-        >.</a
-      >
+        <span>Ambalan <b>Monierson Gradison</b></span>.</a>
 
       <div class="navbar-nav">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#struktur">Struktur</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#struktur">Struktur</a> 
+        <a href="#bidang">Bidang</a>
         <a href="#program">Program</a>
-        <a href="kontak">Kontak</a>
+        <a href="#kontak">Kontak</a>
       </div>
 
       <div class="navbar-extra">
@@ -124,7 +123,7 @@
           </div>
           </div>
       </div>
-    </section>
+        </section>
     <!-- Struktur Section end -->
 
     <!-- Bidang section strat -->
@@ -185,20 +184,134 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit doloremque magnam nesciunt sequi quis corporis numquam doloribus expedita eum laboriosam?</p>
         </div>
         
-           <div class="row">
-        <div class="card">
-          <img src="img/pecapa.jpg" alt="Pradana">
-          <div class="card-text">
+           <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="img/pecapa.jpg" style="width: 100%">
+          <div class="text-card">
             <h3>PECAPA</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, eligendi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum porro asperiores voluptates sint deserunt alias qui aut, id quisquam.
-
-
             </p>
           </div>
           </div>
-      </section>
 
+          <div class="mySlides fade">
+          <img src="img/jumsih.jpg" style="width: 100%">
+          <div class="text-card">
+            <h3>PECAPA</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, eligendi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum porro asperiores voluptates sint deserunt alias qui aut, id quisquam.
+            </p>
+          </div>
+          </div>
+
+          <div class="mySlides fade">
+          <img src="img/santunan.jpg" style="width: 100%">
+          <div class="text-card">
+            <h3>PECAPA</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, eligendi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum porro asperiores voluptates sint deserunt alias qui aut, id quisquam.
+            </p>
+          </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+           </div>
+
+           <!-- <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+           </div> -->
+
+           <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex +=n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slidesIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for ( i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i]. className = dots[i].className.replace("active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += "active";
+            }
+           </script>
+
+      </section>
     <!-- Program Section end -->
+
+    <!-- Kontak Section start -->
+     <section id="kontak" class="kontak">
+       <h2>
+        <span>KONTAK</span> KAMI
+      </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, possimus??</p>
+
+      <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.544727630577!2d108.24674727399642!3d-6.825089793172736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f25e34584607f%3A0xfc1ced4877ff3283!2sSMKN%201%20Majalengka!5e0!3m2!1sen!2sid!4v1749907255988!5m2!1sen!2sid"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="nama">
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" placeholder="email">
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="nomer hp">
+        </div>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+      
+      </div>
+     </section>
+     <!-- Kontak Section end -->
+
+      <!-- Footer start -->
+       <footer>
+        <div class="socials">
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+          <a href="#"><i data-feather="facebook"></i></a>
+        </div>
+
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#struktur">Struktur</a>
+          <a href="#bidang">Bidang</a>
+          <a href="#program">Program</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+
+        <div class="credit">
+          <p>Created by <a href="">HumasAmnAgd</a>. | &copy; 2025.</p>
+        </div>
+
+       </footer>
+     <!-- Footer end -->
+     
+
+     
 
     <!-- Icons -->
     <script>
