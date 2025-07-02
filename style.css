@@ -15,8 +15,11 @@
   text-decoration: none;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -36,7 +39,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 100;
 }
 
 .navbar .navbar-logo {
@@ -289,7 +292,7 @@ body {
 .struktur .row .card-text {
   position: absolute;
   bottom: 20px;
-  left: 50px;
+  left: 30px;
   color: white;
   text-align: center;
   z-index: 2;
@@ -358,7 +361,7 @@ body {
 .bidang .row1 .card-text {
   position: absolute;
   bottom: 20px;
-  left: 30px;
+  left: 25px;
   color: white;
   text-align: center;
   z-index: 2;
@@ -448,6 +451,15 @@ body {
   width: 100%;
   text-align: center;
   z-index: 1;
+}
+
+.text-card h3 {
+  font-size: 20px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.text-card p {
+  line-height: 1rem;
 }
 
 /* Kontak */
@@ -562,21 +574,14 @@ footer .credit a {
   }
 }
 
-/* Tablet */
-@media (max-width: 768px) {
+/* Mobile */
+@media (max-width: 450px) {
   html {
-    font-size: 65%;
+    font-size: 55%;
+    min-width: 50px;
   }
 
-  .hero .content {
-    left: 10rem;
-    text-align: center;
-  }
-
-  .pramuka-img img {
-    width: 800px;
-    left: 20px;
-  }
+  /* Navbar */
 
   #hamburger-menu {
     display: inline-block;
@@ -587,7 +592,7 @@ footer .credit a {
     top: 100%;
     right: -100%;
     background-color: transparent;
-    width: 15rem;
+    width: 10.5rem;
     height: 100vh;
     transition: 0.3s;
   }
@@ -605,31 +610,35 @@ footer .credit a {
     text-align: center;
   }
 
+  .navbar .navbar-logo {
+    margin-right: 15rem;
+  }
+
   .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
-  }
-}
-
-/* Mobile */
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
+    transform: scaleX(0.5);
   }
 
+  /*  Halaman Utama Hero */
   .pramuka-img img {
-    width: 450px;
+    width: 430px;
+    max-width: 100%;
     left: -10px;
   }
 
   .pramuka-img {
     position: absolute;
-    left: 22%;
+    left: 50%;
+    width: 100%;
     bottom: -24px;
     transform: translateX(-50%);
   }
 
+  .hero {
+    min-width: none;
+  }
+
   .hero .content {
-    left: 1rem;
+    left: 0rem;
     text-align: center;
     height: 500px;
   }
@@ -638,6 +647,7 @@ footer .credit a {
     bottom: -20px;
   }
 
+  /* About */
   .about h2,
   .struktur h2 {
     font-size: 2.5rem;
@@ -682,6 +692,7 @@ footer .credit a {
     width: 0px;
   }
 
+  /* Struktur */
   .struktur {
     padding: 0rem 28% 1rem;
     height: 170rem;
@@ -704,6 +715,7 @@ footer .credit a {
     left: -20px;
   }
 
+  /* Bidang */
   .bidang .row1 {
     flex-wrap: wrap;
     width: 300px;
@@ -735,6 +747,7 @@ footer .credit a {
     height: 190rem;
   }
 
+  /* Program */
   .program {
     padding: 0rem 0px 2rem;
   }
@@ -762,9 +775,10 @@ footer .credit a {
   }
 
   .text-card p {
-    margin-left: 20rem;
+    margin-left: 2.5rem;
   }
 
+  /* Kontak */
   .kontak .row {
     flex-wrap: wrap;
     width: 335px;
