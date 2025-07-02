@@ -150,14 +150,14 @@ body {
 
 .pramuka-img {
   position: absolute;
-  width: 200px;
-  left: 7%;
+  width: 700px;
+  left: 30%;
   bottom: -20px;
   transform: translateX(-50%);
 }
 
 .pramuka-img img {
-  max-width: none;
+  max-width: 100%;
   width: 600px;
   height: auto;
 }
@@ -174,7 +174,7 @@ body {
 .program h2 {
   text-align: center;
   font-size: 2rem;
-  margin: 3rem;
+  margin: 8rem;
   line-height: 1;
 }
 
@@ -575,7 +575,7 @@ footer .credit a {
 }
 
 /* Mobile */
-@media (max-width: 412px), (max-height: 915px) {
+@media (max-width: 450px) {
   html {
     font-size: 55%;
     min-width: 50px;
@@ -643,17 +643,12 @@ footer .credit a {
     height: 500px;
   }
 
-  .hero::after {
-    bottom: -20px;
-  }
-
   /* About */
-  .about h2,
-  .struktur h2 {
+  .about h2 {
     font-size: 2.5rem;
     width: 450px;
     max-width: 500px;
-    margin-left: -130px;
+    margin-left: -150px;
   }
 
   .about .img-logo img {
@@ -705,6 +700,13 @@ footer .credit a {
     margin-left: -150px;
   }
 
+  .struktur h2 {
+    font-size: 2.5rem;
+    width: 450px;
+    max-width: 500px;
+    margin-left: -130px;
+  }
+
   .struktur p {
     width: 33rem;
     margin-left: -45px;
@@ -718,15 +720,11 @@ footer .credit a {
   /* Bidang */
   .bidang .row1 {
     flex-wrap: wrap;
-    width: 300px;
-    max-width: 1000px;
-    margin-left: 8rem;
+    width: 330px;
   }
 
   .bidang h2 {
     font-size: 2.5rem;
-    width: 400px;
-    max-width: 500px;
   }
 
   .bidang p {
@@ -749,25 +747,21 @@ footer .credit a {
 
   /* Program */
   .program {
-    padding: 0rem 0px 2rem;
+    padding: 0rem 1% 2rem;
   }
 
   .program p {
     width: 33rem;
-    margin-left: 7rem;
   }
 
   .program h2 {
-    margin-left: -2rem;
     font-size: 2.5rem;
-    width: 450px;
-    max-width: 500px;
+    width: 200px;
   }
 
   .slideshow-container {
     max-width: 400px;
     width: 350px;
-    margin-left: 5rem;
   }
 
   .text-card {
@@ -781,7 +775,7 @@ footer .credit a {
   /* Kontak */
   .kontak .row {
     flex-wrap: wrap;
-    width: 335px;
+    width: 300px;
     height: 55rem;
   }
 
