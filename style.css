@@ -25,27 +25,6 @@ body {
   color: #fff;
 }
 
-/* 
-#about {
-  background-color: #f9f9f9;
-}
-
-#struktur {
-  background-color: #0000;
-}
-
-#program {
-  background-color: #2f2f6000;
-} */
-
-/* #program,
-#struktur,
-#about,
-#home,
-#bidang {
-  scroll-margin-top: 100px;
-} */
-
 /* Navbar */
 .navbar {
   display: flex;
