@@ -631,13 +631,14 @@ footer .credit a {
   }
 
   .hero {
+    min-height: 90vh;
     min-width: none;
   }
 
   .hero .content {
     left: 0rem;
     text-align: center;
-    min-height: 100vh;
+    height: 400px;
   }
 
   /* About */
