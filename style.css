@@ -178,6 +178,10 @@ body {
   line-height: 1;
 }
 
+.about h2 {
+  min-width: none;
+}
+
 .about h2 span,
 .struktur h2 span,
 .bidang h2 span,
